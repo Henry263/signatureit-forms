@@ -275,7 +275,7 @@
             let username = $('#fname').val() + " " + $('#lname').val();
             let csvFile = JSONToCSVConvertor(objArray, username, true, username, tableData);
             //console.log("Success: ", tableData)
-
+            alert("Thank You. We will reach out to you shortly.");
             // sendEmail();
         }
         //console.log(obj);
