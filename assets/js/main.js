@@ -1,17 +1,17 @@
 (function($) {
 
-    $(".Q-div").find('input[type=text]').each(function(index) {
-        // console.log(index + ": " + $(this).val());
-        $(this).val("test val");
+    // $(".Q-div").find('input[type=text]').each(function(index) {
+    //     // console.log(index + ": " + $(this).val());
+    //     $(this).val("test val");
 
-    });
-    $(".Q-div").find('input[type=date]').each(function(index) {
-        // console.log(index + ": " + $(this).val());
-        $(this).val('2000-01-01');
+    // });
+    // $(".Q-div").find('input[type=date]').each(function(index) {
+    //     // console.log(index + ": " + $(this).val());
+    //     $(this).val('2000-01-01');
 
-    });
+    // });
 
-    $("#email").val('safsad@gmail.com');
+    // $("#email").val('safsad@gmail.com');
 
     // Function to verify character only
     function verifychar(strval) {
@@ -256,6 +256,10 @@
         if ($(".Q-div").find("div.display-none").length !== 10) {
             //console.log($(".Q-div").find("div.display-none").length)
             //console.log("Errir")
+            $('.error-div:not(.display-none):first').text();
+            $('html,body').animate({
+                scrollTop: $('.error-div:not(.display-none):first').offset().top - 130
+            });
         } else {
             obj[$("#relocate").data('name')] = $("#relocate option:selected").text();
             obj[$("#edu").data('name')] = $("#edu option:selected").text();
