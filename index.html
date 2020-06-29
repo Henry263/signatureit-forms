@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Sidebar -->
+    <section id="sidebar">
+        <div class="inner">
+            <nav>
+                <ul>
+                    <li><a href="#intro">Welcome</a></li>
+                    <li><a href="#one">Questionnaires</a></li>
+                    <!-- <li><a href="#two">What we do</a></li> -->
+                    <li><a href="#three">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Intro -->
+        <section id="intro" class="wrapper style1 fullscreen fade-up">
+            <div class="inner">
+                <h1>SignatureIT Solutions</h1>
+                <p>We pride ourselves on getting to know our clients and consultants intimately, to provide the right placements and establish long-term relationships.</p>
+                <ul class="actions">
+                    <li><a href="http://www.signatureits.com/" class="button scrolly">Learn more</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- One -->
+        <section id="one" class="wrapper style2 spotlights">
+
+            <section class="child-section">
+                <div class="sec-heading">
+                    <span class="text-heading">Provide us the following information and we will get in touch with as soon as we can.</span></div>
+                <div class="Q-div">
+                    <label for="fname" class="q-name">First name:</label>
+                    <input type="text" id="fname" name="fname" data-name="First Name" class="q-name">
+                    <div class="error-div display-none"></div>
+
+                    <label for="lname" class="q-name">Last name:</label>
+                    <input type="text" id="lname" name="lname" data-name="Last Name" class="q-name">
+                    <div class="error-div display-none"></div>
+
+
+                    <label for="phonumber" class="q-name">Phone Number: (Without country code)</label>
+                    <input type="text" id="phonumber" name="phonumber" class="q-name" data-name="Phone Number" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+
+                    <label for="email" class="q-name">Email Id:</label>
+                    <input type="text" id="email" name="email" data-name="Email ID" class="q-name">
+                    <div class="error-div display-none"></div>
+
+                    <label for="dob" class="q-name">Date Of Birth:</label>
+                    <input type="date" id="dob" name="dob" class="q-name" data-name="Birth Date" min="1960-01-01" max="2001-12-31">
+                    <div class="error-div display-none"></div>
+
+                    <label for="cstatus" class="q-name">Current Status:</label>
+
+                    <select id="cstatus" class="selectstyle classic" data-name="Current Status"> 
+						<option value="opt">OPT</option>
+						<option value="cpt">CPT</option>
+						<option value="h1b">H1B</option>
+						<option value="h4ead">H4 EAD</option>
+						<option value="gc">GC</option>
+						<option value="citizen">Citizen</option>
+						<option value="other">Other</option>
+					</select>
+
+                    <label for="nationality" class="q-name">Nationality:</label>
+                    <input type="text" id="nationality" name="nationality" data-name="Nationality" class="q-name">
+                    <div class="error-div display-none"></div>
+
+                    <label for="edu" class="q-name">Highest Education:</label>
+                    <select id="edu" class="selectstyle classic" data-name="Degree"> 
+						<option value="bachelor">Bachelor's</option>
+						<option value="master">Master's</option>
+					</select>
+
+                    <label for="eduspecial" class="q-name">Specialization:</label>
+                    <input type="text" id="eduspecial" name="eduspecial" data-name="Education" class="q-name">
+                    <div class="error-div display-none"></div>
+
+                    <label for="uname" class="q-name">University name:</label>
+                    <input type="text" id="uname" name="uname" data-name="University Name" class="q-name">
+                    <div class="error-div display-none"></div>
+
+                    <label for="ulocation" class="q-name">University Location:</label>
+                    <input type="text" id="ulocation" name="ulocation" data-name="University Location" class="q-name">
+                    <div class="error-div display-none"></div>
+
+                    <label for="entrydate" class="q-name">Date Entered First time in USA:</label>
+                    <input type="date" id="entrydate" name="entrydate" class="q-name" data-name="US Entry Date" min="2000-01-01" max="2021-12-31">
+                    <div class="error-div display-none"></div>
+
+                    <label for="gdate" class="q-name">Graduation Date:</label>
+                    <input type="date" id="gdate" name="gdate" class="q-name" data-name="Graduation Date" min="2000-01-01" max="2022-12-31">
+                    <div class="error-div display-none"></div>
+
+                    <label for="relocate" class="q-name">Open to relocation:</label>
+                    <select id="relocate" class="selectstyle classic" data-name="Prefer relocation"> 
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+						<option value="maybe">Maybe</option>
+					</select>
+
+                    <label for="referral" class="q-name">Referred By:</label>
+                    <input type="text" id="referral" name="referral" data-name="Refer By" class="q-name">
+
+                    <label for="prevexp" class="q-name">Previous Experience:</label>
+                    <textarea id="prevexp" name="prevexp" rows="4" data-name="Previous experience">	
+					</textarea>
+
+                    <label for="techinterest" class="q-name">Technology Interested:</label>
+                    <textarea id="techinterest" name="techinterest" rows="4" data-name="Technology Interest">	
+					</textarea>
+
+                    <div class="button-div">
+                        <button type="button" class="post-btn">Submit Data</button>
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+
+
+        <!-- Three -->
+        <section id="three" class="wrapper style1 fade-up">
+            <div class="inner">
+                <h2>We will get in touch</h2>
+                <p>Thank you for providing the information. We will get back to you as soon as we can. </p>
+                <section>
+                    <ul class="contact">
+                        <li>
+                            <h3>Address</h3>
+                            <span>146 E White St Suite A<br />
+								Rock Hill, SC 29730<br />
+										USA</span>
+                        </li>
+                        <li>
+                            <h3>Email</h3>
+                            <a href="#">info.nc@signatureits.com</a>
+                        </li>
+                        <li>
+                            <h3>Phone</h3>
+                            <span>803-500-6995</span>
+                        </li>
+
+                    </ul>
+                </section>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style1-alt">
+        <div class="inner">
+            <ul class="menu">
+                <li>&copy; Signature It Solutions all rights reserved.</li>
+                <li>Design: <a href="http://www.signatureits.com/">Signature It Solutions</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/smtp.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <div id="tablevalues" class="display-none"></div>
+</body>
+
+</html>
